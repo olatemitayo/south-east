@@ -27,13 +27,6 @@ export default function App({ Component, pageProps }: AppProps) {
         withGlobalStyles
         withNormalizeCSS
       >
-        <ToastContainer
-          className={"mt-12 cmd:mt-0 font-bold"}
-          position="top-right"
-          transition={Slide}
-          hideProgressBar
-          autoClose={4000}
-        />
         <Component {...pageProps} />
       </MantineProvider>
     </QueryClientProvider>

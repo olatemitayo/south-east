@@ -1,9 +1,22 @@
-import { Box, Flex, Popover, Text } from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
+import { Box, Button, Drawer, Flex, Popover, Text } from "@mantine/core";
+import Link from "next/link";
 import React from "react";
+import {
+  PiEnvelope,
+  PiEnvelopeBold,
+  PiHamburger,
+  PiHamburgerFill,
+  PiMessengerLogo,
+  PiPhoneCall,
+  PiWhatsappLogo,
+} from "react-icons/pi";
+import { Hamburger } from "@/public/icons";
 
 export function Navbar() {
+  const [opened, { open, close }] = useDisclosure(false);
   return (
-    <Box bg="#b44f21">
+    <Box px="clamp(20px,4vw,48px)">
       <Flex
         justify="space-between"
         align="center"
@@ -12,27 +25,126 @@ export function Navbar() {
         mx="auto"
         p={16}
       >
-        <img src="/oyo-state-logo.png" alt="LOGO" />
-        <Flex gap={32} c="white">
-          <Text>Home</Text>
-          <Text>News</Text>
-          <Text>Gallery</Text>
+        <img
+          src="/oyo-state-logo.png"
+          className="w-[clamp(150px,12vw,200px)]"
+          alt="LOGO"
+        />
+        <Flex
+          gap="clamp(32px,4vw,64px)"
+          c="#b44f21"
+          className="cmd:hidden font-bold"
+        >
+          <Link
+            className=" hover:text-[#fbf1f1]  hover:scale-125 cursor-pointer"
+            href={"/"}
+          >
+            <Text>Home</Text>
+          </Link>
+          <Link
+            className=" hover:text-[#fbf1f1]  hover:scale-125 cursor-pointer"
+            href={"/news"}
+          >
+            <Text>News</Text>
+          </Link>
+          <Link
+            className=" hover:text-[#fbf1f1]  hover:scale-125 cursor-pointer"
+            href={"/gallery"}
+          >
+            <Text>Gallery</Text>
+          </Link>
         </Flex>
-
-        <Popover width={200} position="bottom" shadow="md">
-          <Popover.Target>
-            <Box bg="#ED6600">
-              <Text c="white" p={8}>
+        <Box className="cmd:hidden">
+          <Popover
+            width={220}
+            position="bottom"
+            shadow="md"
+            offset={{ mainAxis: 5, crossAxis: -55 }}
+            classNames={{ dropdown: "p-0" }}
+          >
+            <Popover.Target>
+              <Button c="#b44f21" className="bg-white hover:bg-[#b44f21] ">
                 Contact Us
-              </Text>
-            </Box>
-          </Popover.Target>
-          <Popover.Dropdown>
-            <Text size="sm">
-              This is uncontrolled popover, it is opened when button is clicked
-            </Text>
-          </Popover.Dropdown>
-        </Popover>
+              </Button>
+            </Popover.Target>
+            <Popover.Dropdown>
+              <Flex direction="column" gap={4}>
+                <a
+                  href="mailto:olatunjitemitayo444@gmail.com"
+                  className="flex items-center gap-2 hover:bg-[#fbf1f1] px-3 py-2"
+                >
+                  <PiEnvelope color="#ff6900" size={30} />
+                  <Text>Send us an Email</Text>
+                </a>
+                <a
+                  href="tel:+2347067100222"
+                  className="flex items-center gap-2   hover:bg-[#fbf1f1] px-3 py-2"
+                >
+                  <PiPhoneCall color="#ff6900" size={30} />
+                  <Text>Call us on Phone</Text>
+                </a>
+                <a
+                  href="http://"
+                  className="flex items-center gap-2  hover:bg-[#fbf1f1]  px-3 py-2"
+                >
+                  <PiWhatsappLogo color="green" size={30} />
+                  <Text>Text us on Whatsapp</Text>
+                </a>
+              </Flex>
+            </Popover.Dropdown>
+          </Popover>
+        </Box>
+        {/* drawer for mobile view  */}
+        <Box className="hidden cmd:block cursor-pointer">
+          <Drawer
+            opened={opened}
+            onClose={close}
+            position="right"
+            transitionProps={{ duration: 800, transition: "slide-left" }}
+          >
+            <Flex direction="column" gap={12}>
+              <Link
+                className="  hover:text-[#b44f21] cursor-pointer w-max"
+                href={"/"}
+              >
+                <Text>Home</Text>
+              </Link>
+              <Link
+                className="  hover:text-[#b44f21] cursor-pointer  w-max"
+                href={"/news"}
+              >
+                <Text>News</Text>
+              </Link>
+              <Link
+                className="  hover:text-[#b44f21] cursor-pointer  w-max"
+                href={"/gallery"}
+              >
+                <Text>Gallery</Text>
+              </Link>
+              <a
+                href="mailto:olatunjitemitayo444@gmail.com"
+                className="flex items-center gap-2  w-max"
+              >
+                <PiEnvelope color="#ff6900" size={30} />
+                <Text className="hover:text-[#b44f21] ">Send us an Email</Text>
+              </a>
+              <a
+                href="tel:+2347067100222"
+                className="flex items-center gap-2    w-max"
+              >
+                <PiPhoneCall color="#ff6900" size={30} />
+                <Text className="hover:text-[#b44f21] ">Call us on Phone</Text>
+              </a>
+              <a href="http://" className="flex items-center gap-2    w-max">
+                <PiWhatsappLogo color="green" size={30} />
+                <Text className="hover:text-[#b44f21] ">
+                  Text us on Whatsapp
+                </Text>
+              </a>
+            </Flex>
+          </Drawer>
+          <Hamburger onClick={open} />
+        </Box>
       </Flex>
     </Box>
   );

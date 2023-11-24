@@ -1,0 +1,30 @@
+import { Box, Flex, Text } from "@mantine/core";
+import { motion } from "framer-motion";
+import React from "react";
+
+export function Hero() {
+  return (
+    <Box px="clamp(20px,4vw,48px)">
+      <Flex
+        w="100%"
+        justify="space-between"
+        maw={1330}
+        mx="auto"
+        className="py-[clamp(20px,2vw,32px)] cmd:!flex-col"
+        align="center"
+      >
+        <h1 className="text-[clamp(32px,4vw,60px)] max-w-['60%'] cmd:w-full font-bold text-[#4a4a4a]">
+          Welcome to Ibadan South West Local government
+        </h1>
+        <motion.main
+          initial={{ y: -1000 }}
+          animate={{ y: 5 }}
+          transition={{ duration: 0.8 }}
+          className="border border-[#f8e7df] w-['35%'] cmd:!w-full min-h-max"
+        >
+          <img src="/building.jpg" alt="" className="w-full" />
+        </motion.main>
+      </Flex>
+    </Box>
+  );
+}

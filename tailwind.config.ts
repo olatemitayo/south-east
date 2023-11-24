@@ -20,7 +20,7 @@ const config: Config = {
       pview: { max: "980px", min: "800px" },
       clg: { max: "800px" },
       md: { max: "700px" },
-      cmd: { max: "631px" },
+      cmd: { max: "610px" },
       mcmd: { min: "630px" },
       cgsm: { max: "560px" },
       gsm: { max: "500px" },

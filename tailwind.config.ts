@@ -18,7 +18,7 @@ const config: Config = {
       xl: { max: "1279px" },
       lg: { max: "1023px" },
       pview: { max: "980px", min: "800px" },
-      clg: { max: "800px" },
+      clg: { min: "700px" },
       md: { max: "700px" },
       cmd: { max: "610px" },
       mcmd: { min: "630px" },

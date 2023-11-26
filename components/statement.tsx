@@ -1,10 +1,11 @@
 import { Box, Flex, Text } from "@mantine/core";
+import { motion } from "framer-motion";
 import React from "react";
 import { PiBriefcaseBold, PiNotePencil, PiScrollBold } from "react-icons/pi";
 
 export function Statement() {
   return (
-    <Box className="bg-[#f9e3e3]">
+    <Box className="">
       <Flex
         w="100%"
         align="center"
@@ -35,6 +36,7 @@ export function Statement() {
               significantly to overall welfare and advancement.
             </Text>
           </Flex>
+
           <Flex direction="column" w="30%" gap={8} className="cmd:!w-full">
             <PiNotePencil size={50} color="#fbbb9f" />
             <Text c="#b44f21" className="font-bold text-[24px]">

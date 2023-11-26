@@ -23,7 +23,7 @@ export function Hero() {
             transition={{ duration: 0.8 }}
             className="border border-[#f8e7df] w-['35%'] cmd:!w-full min-h-max "
           >
-            <img src="/homepic.jpg" alt="" className="w-full" />
+            <img src="/building.jpg" alt="" className="w-full" />
           </motion.main>
         </Flex>
       </Box>

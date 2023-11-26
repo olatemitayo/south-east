@@ -51,13 +51,11 @@ export function Footer() {
           <Text className="text-[24px] font-bold" c="#b44f21">
             Links
           </Text>
-          <Link href="#">
+          <Link href="/about">
             <Text className="font-semibold">About</Text>
           </Link>
-          <Link href="#">
-            <Text className="font-semibold">News</Text>
-          </Link>
-          <Link href="#">
+
+          <Link href="/gallery">
             <Text className="font-semibold">Gallery</Text>
           </Link>
         </Flex>

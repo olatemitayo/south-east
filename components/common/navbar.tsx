@@ -25,11 +25,13 @@ export function Navbar() {
         mx="auto"
         p={16}
       >
-        <img
-          src="/oyo-state-logo.png"
-          className="w-[clamp(150px,12vw,200px)]"
-          alt="LOGO"
-        />
+        <Link href={"/"}>
+          <img
+            src="/oyo-state-logo.png"
+            className="w-[clamp(150px,12vw,200px)]"
+            alt="LOGO"
+          />
+        </Link>
         <Flex
           gap="clamp(32px,4vw,64px)"
           c="#b44f21"
@@ -38,8 +40,8 @@ export function Navbar() {
           <Link className="   hover:scale-125 cursor-pointer" href={"/"}>
             <Text>Home</Text>
           </Link>
-          <Link className="   hover:scale-125 cursor-pointer" href={"/news"}>
-            <Text>News</Text>
+          <Link className="   hover:scale-125 cursor-pointer" href={"/about"}>
+            <Text>About</Text>
           </Link>
           <Link className="   hover:scale-125 cursor-pointer" href={"/gallery"}>
             <Text>Gallery</Text>
@@ -78,7 +80,7 @@ export function Navbar() {
                   <Text>Call us on Phone</Text>
                 </a>
                 <a
-                  href="https://wa.me/<08027895267>"
+                  href="https://wa.me/08027895267"
                   className="flex items-center gap-2  hover:bg-[#fbf1f1]  px-3 py-2"
                 >
                   <PiWhatsappLogo color="green" size={30} />
@@ -105,9 +107,9 @@ export function Navbar() {
               </Link>
               <Link
                 className="  hover:text-[#b44f21] cursor-pointer  w-max"
-                href={"/news"}
+                href={"/about"}
               >
-                <Text>News</Text>
+                <Text>About</Text>
               </Link>
               <Link
                 className="  hover:text-[#b44f21] cursor-pointer  w-max"

@@ -23,15 +23,15 @@ const personnelData: IPersonnelData[] = [
   },
   {
     id: 3,
-    name: "Mr. Olatunji Akeem O.",
-    position: "Head, Local Govt. Administration, Ibadan South West LG",
-    img: "/hla.jpg",
-  },
-  {
-    id: 4,
     name: "Hon. Bello Vincent Olumide",
     position: "Secretary to the Local Government Ibadan South West LG",
     img: "/secretary.jpg",
+  },
+  {
+    id: 4,
+    name: "Mr. Olatunji Akeem O.",
+    position: "Head, Local Govt. Administration, Ibadan South West LG",
+    img: "/hla.jpg",
   },
 ];
 
@@ -48,7 +48,7 @@ export function Personnel() {
         py="clamp(16px,3vw,48px)"
         gap="clamp(16px,2vw,32px)"
       >
-        <Text className="font-extrabold" c="#4a4a4a">
+        <Text className="font-extrabold text-[18px]" c="#4a4a4a">
           Meet our Principal Officers
         </Text>
         <Flex direction="column" gap={20} className="hidden clg:flex">
@@ -93,12 +93,13 @@ export function Personnel() {
         <Flex className="md:flex hidden flex-col gap-10">
           {personnelData?.map((item) => (
             <Flex key={item?.id} align="center" direction="column" gap={12}>
-              <img className="h-[400px] w-full" src={item?.img} alt="" />
+              <figure className="w-[300px]">
+                <img className="h-[400px] w-[300px]" src={item?.img} alt="" />
+              </figure>
               <Flex
                 direction="column"
-                w={400}
                 justify="center"
-                className="text-center"
+                className="text-center w-[300px]"
               >
                 <Text className="font-extrabold text-[24px]">{item?.name}</Text>
                 <Text className="font-bold">{item?.position}</Text>

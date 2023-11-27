@@ -85,7 +85,7 @@ export function Navbar() {
                   <Text>Call us on Phone</Text>
                 </a>
                 <a
-                  href="https://wa.me/08027895267"
+                  href="https://api.whatsapp.com/send/?phone=2348027895267&text&type=phone_number&app_absent=0"
                   className="flex items-center gap-2  hover:bg-[#fbf1f1]  px-3 py-2"
                 >
                   <PiWhatsappLogo color="green" size={30} />
@@ -136,7 +136,10 @@ export function Navbar() {
                 <PiPhoneCall color="#ff6900" size={30} />
                 <Text className="hover:text-[#b44f21] ">Call us on Phone</Text>
               </a>
-              <a href="http://" className="flex items-center gap-2    w-max">
+              <a
+                href="https://api.whatsapp.com/send/?phone=2348027895267&text&type=phone_number&app_absent=0"
+                className="flex items-center gap-2    w-max"
+              >
                 <PiWhatsappLogo color="green" size={30} />
                 <Text className="hover:text-[#b44f21] ">
                   Text us on Whatsapp

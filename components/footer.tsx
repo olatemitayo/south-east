@@ -36,9 +36,7 @@ export function Footer() {
           </a>
           <Flex gap={4} w={300} align="center" className="cmd:w-full">
             <PiAlarmLight size={32} color="#b44f21" />
-            <Text className="font-semibold">
-              Opening Hours: Mon - Fri: 8:00am - 4 :00pm
-            </Text>
+            <Text>Opening Hours: Mon - Fri: 8:00am - 4 :00pm</Text>
           </Flex>
           <Flex gap={4} w={300} className="cmd:w-full">
             <PiMapPin size={32} color="#b44f21" />

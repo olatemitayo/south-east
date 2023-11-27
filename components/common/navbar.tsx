@@ -16,19 +16,24 @@ import { Hamburger } from "@/public/icons";
 export function Navbar() {
   const [opened, { open, close }] = useDisclosure(false);
   return (
-    <Box px="clamp(20px,4vw,48px)" bg="#f9e3e3" className="z-50" w="100%">
+    <Box
+      px="clamp(16px,4vw,48px)"
+      bg="#f9e3e3"
+      className="z-50 cmd:py-2"
+      w="100%"
+    >
       <Flex
         justify="space-between"
         align="center"
         w="100%"
         maw={1330}
         mx="auto"
-        p={16}
+        // px={16}
       >
         <Link href={"/"}>
           <img
             src="/oyo-state-logo.png"
-            className="w-[clamp(150px,12vw,200px)]"
+            className="w-[clamp(120px,12vw,200px)]"
             alt="LOGO"
           />
         </Link>
@@ -118,7 +123,7 @@ export function Navbar() {
                 <Text>Gallery</Text>
               </Link>
               <a
-                href="mailto:olatunjitemitayo444@gmail.com"
+                href="mailto:ibadansouthwest01@gmail.com"
                 className="flex items-center gap-2  w-max"
               >
                 <PiEnvelope color="#ff6900" size={30} />

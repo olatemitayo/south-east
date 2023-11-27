@@ -16,7 +16,7 @@ export function Statement() {
         py="clamp(16px,3vw,48px)"
         gap="clamp(16px,2vw,32px)"
       >
-        <Text className="font-extrabold" c="#4a4a4a">
+        <Text className="font-extrabold text-[18px]" c="#4a4a4a">
           What we stand for
         </Text>
         <Flex w="100%" justify="space-between" className="cmd:flex-col gap-8">

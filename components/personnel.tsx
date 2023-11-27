@@ -44,7 +44,7 @@ export function Personnel() {
         direction="column"
         maw={1330}
         mx="auto"
-        px="clamp(20px,4vw,48px)"
+        px="clamp(12px,4vw,48px)"
         py="clamp(16px,3vw,48px)"
         gap="clamp(16px,2vw,32px)"
       >
@@ -93,13 +93,13 @@ export function Personnel() {
         <Flex className="md:flex hidden flex-col gap-10">
           {personnelData?.map((item) => (
             <Flex key={item?.id} align="center" direction="column" gap={12}>
-              <figure className="w-[300px]">
-                <img className="h-[400px] w-[300px]" src={item?.img} alt="" />
+              <figure className="w-[310px]">
+                <img className="h-[400px] w-[310px]" src={item?.img} alt="" />
               </figure>
               <Flex
                 direction="column"
                 justify="center"
-                className="text-center w-[300px]"
+                className="text-center w-[310px]"
               >
                 <Text className="font-extrabold text-[24px]">{item?.name}</Text>
                 <Text className="font-bold">{item?.position}</Text>

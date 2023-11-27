@@ -1,5 +1,4 @@
-import { Box, Flex, Text } from "@mantine/core";
-import { motion } from "framer-motion";
+import { Box, Flex } from "@mantine/core";
 import React from "react";
 
 export function Hero() {
@@ -11,7 +10,7 @@ export function Hero() {
           justify="space-between"
           maw={1330}
           mx="auto"
-          className="py-[clamp(20px,2vw,32px)] cmd:!flex-col"
+          className="py-[clamp(20px,2vw,32px)] cmd:!flex-col cmd:gap-4"
           align="center"
         >
           <h1 className="text-[clamp(32px,4vw,60px)] max-w-['60%'] cmd:w-full font-bold text-[#4a4a4a]">

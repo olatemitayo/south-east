@@ -28,35 +28,35 @@ export function Footer() {
         mx="auto"
       >
         <Flex direction="column" gap={16}>
-          <Flex gap={4} maw={300}>
-            <PiMapPin size={32} color="#b44f21" />
-            <Text className="font-semibold">
-              Oluyole Estate, Ring Road area, Ibadan, Oyo State.
-            </Text>
-          </Flex>
-          <Flex gap={4} maw={300} align="center">
-            <PiEnvelopeLight size={28} color="#b44f21" />
-            <a href="mailto:ibadansouthwest01@gmail.com">
-              <Text className="font-semibold">ibadansouthwest01@gmail.com</Text>
-            </a>
-          </Flex>
-          <Flex gap={4} maw={300}>
+          <a href="mailto:ibadansouthwest01@gmail.com">
+            <Flex gap={8} w={300} align="center" className="cmd:w-full">
+              <PiEnvelopeLight size={32} color="#b44f21" />
+              <Text className="">ibadansouthwest01@gmail.com</Text>
+            </Flex>
+          </a>
+          <Flex gap={4} w={300} align="center" className="cmd:w-full">
             <PiAlarmLight size={32} color="#b44f21" />
             <Text className="font-semibold">
               Opening Hours: Mon - Fri: 8:00am - 4 :00pm
             </Text>
           </Flex>
+          <Flex gap={4} w={300} className="cmd:w-full">
+            <PiMapPin size={32} color="#b44f21" />
+            <Text className="italic">
+              Oluyole Estate, Ring Road area, Ibadan, Oyo State.
+            </Text>
+          </Flex>
         </Flex>
         <Flex direction="column" gap={16}>
-          <Text className="text-[24px] font-bold" c="#b44f21">
+          <Text className="text-[18px] font-semibold" c="#b44f21">
             Links
           </Text>
           <Link href="/about">
-            <Text className="font-semibold">About</Text>
+            <Text className="">About</Text>
           </Link>
 
           <Link href="/gallery">
-            <Text className="font-semibold">Gallery</Text>
+            <Text className="">Gallery</Text>
           </Link>
         </Flex>
         <Flex direction="column" gap={16} align="center">

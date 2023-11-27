@@ -17,14 +17,9 @@ export function Hero() {
           <h1 className="text-[clamp(32px,4vw,60px)] max-w-['60%'] cmd:w-full font-bold text-[#4a4a4a]">
             Welcome to Ibadan South West Local government
           </h1>
-          <motion.main
-            initial={{ x: 1000 }}
-            animate={{ x: -5 }}
-            transition={{ duration: 0.8 }}
-            className="border border-[#f8e7df] w-['35%'] cmd:!w-full min-h-max "
-          >
+          <main className="border border-[#f8e7df] w-['35%'] cmd:!w-full min-h-max ">
             <img src="/building.jpg" alt="" className="w-full" />
-          </motion.main>
+          </main>
         </Flex>
       </Box>
     </div>

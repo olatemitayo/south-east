@@ -1,5 +1,4 @@
 import { Box, Flex, Text } from "@mantine/core";
-import { motion } from "framer-motion";
 import React from "react";
 import { PiBriefcaseBold, PiNotePencil, PiScrollBold } from "react-icons/pi";
 
@@ -25,7 +24,7 @@ export function Statement() {
             <Text c="#b44f21" className="font-bold text-[24px]">
               Vision Statement
             </Text>
-            <Text c="#4a4a4a">
+            <Text c="#4a4a4a" className="font-normal">
               Ibadan South West Local Government envisions pioneering
               sustainable solutions, meeting community needs, and generating job
               opportunities. Our vision is to create a dynamic, resilient
@@ -42,7 +41,7 @@ export function Statement() {
             <Text c="#b44f21" className="font-bold text-[24px]">
               Mission statement
             </Text>
-            <Text c="#4a4a4a">
+            <Text c="#4a4a4a" className="font-normal">
               To empower and provide for developmental projects in fundamental
               amenities, infrastructure, and skills acquisition, among other
               initiatives. Our mission is rooted in enhancing the quality of
@@ -60,7 +59,7 @@ export function Statement() {
             <Text c="#b44f21" className="font-bold text-[24px]">
               Core Values
             </Text>
-            <Text c="#4a4a4a">
+            <Text c="#4a4a4a" className="font-normal">
               Empowering Communities, Enabling Progress: Our core values embrace
               transparency, inclusivity, and accountability. We prioritize
               community well-being, fostering unity, and delivering essential

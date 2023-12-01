@@ -14,7 +14,7 @@ export function Hero() {
           align="center"
         >
           <h1 className="text-[clamp(28px,4vw,60px)] max-w-['60%'] cmd:w-full font-bold text-[#4a4a4a]">
-            Welcome to Ibadan South West Local government
+           Ibadan South West Local government
           </h1>
           <main className="border border-[#f8e7df] w-['35%'] cmd:!w-full min-h-max ">
             <img src="/building.jpg" alt="" className="w-full" />

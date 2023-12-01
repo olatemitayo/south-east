@@ -49,7 +49,7 @@ export function Personnel() {
         gap="clamp(16px,2vw,32px)"
       >
         <Text className="font-extrabold text-[18px]" c="#4a4a4a">
-          Meet our Principal Officers
+          Ibadan South West Principal Officers
         </Text>
         <Flex direction="column" gap={20} className="hidden clg:flex">
           {personnelData?.map((item) => (

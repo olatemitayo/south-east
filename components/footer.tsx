@@ -28,7 +28,7 @@ export function Footer() {
         mx="auto"
       >
         <Flex direction="column" gap={16}>
-          <a href="mailto:ibadansouthwest01@gmail.com">
+          <a href="mailto:ibadansouthwestlg01@gmail.com">
             <Flex gap={8} w={300} align="center" className="cmd:w-full">
               <PiEnvelopeLight size={32} color="#b44f21" />
               <Text className="">ibadansouthwest01@gmail.com</Text>

@@ -71,7 +71,7 @@ export function Navbar() {
             <Popover.Dropdown>
               <Flex direction="column" gap={4}>
                 <a
-                  href="mailto:ibadansouthwest01@gmail.com"
+                  href="mailto:ibadansouthwestlg01@gmail.com"
                   className="flex items-center gap-2 hover:bg-[#fbf1f1] px-3 py-2"
                 >
                   <PiEnvelope color="#ff6900" size={30} />
@@ -123,14 +123,14 @@ export function Navbar() {
                 <Text>Gallery</Text>
               </Link>
               <a
-                href="mailto:ibadansouthwest01@gmail.com"
+                href="mailto:ibadansouthwestlg01@gmail.com"
                 className="flex items-center gap-2  w-max"
               >
                 <PiEnvelope color="#ff6900" size={30} />
                 <Text className="hover:text-[#b44f21] ">Send us an Email</Text>
               </a>
               <a
-                href="tel:+2347067100222"
+                href="tel:+2348027895267"
                 className="flex items-center gap-2    w-max"
               >
                 <PiPhoneCall color="#ff6900" size={30} />

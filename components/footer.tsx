@@ -31,7 +31,7 @@ export function Footer() {
           <a href="mailto:ibadansouthwestlg01@gmail.com">
             <Flex gap={8} w={300} align="center" className="cmd:w-full">
               <PiEnvelopeLight size={32} color="#b44f21" />
-              <Text className="">ibadansouthwest01@gmail.com</Text>
+              <Text className="">ibadansouthwestlg01@gmail.com</Text>
             </Flex>
           </a>
           <Flex gap={4} w={300} align="center" className="cmd:w-full">
@@ -59,13 +59,13 @@ export function Footer() {
         </Flex>
         <Flex direction="column" gap={16} align="center">
           <Flex gap={16}>
-            <Link href={"www.instagram.com"}>
+            <Link href="#">
               <PiInstagramLogo size={32} color="#b44f21" />
             </Link>
-            <Link href="www.facebook.com">
+            <Link href="#">
               <PiFacebookLogo size={32} color="#b44f21" />
             </Link>
-            <Link href={"www.twitter.com"}>
+            <Link href="#">
               <PiTwitterLogo size={32} color="#b44f21" />
             </Link>
           </Flex>

@@ -5,7 +5,6 @@
   font-style: normal;
 }
 
-/* C:\Users\﻿TemitayoOlatunji\Desktop\cartSystem\snack-house\public\font\AvenirLTStd-Black.otf */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,24 +14,116 @@
   outline: none;
 }
 
-/* .grid-container {
-  display: grid;
-  gap: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 3fr));
-} */
+html {
+  scroll-behavior: smooth;
+}
 
+body {
+  overflow-x: hidden;
+}
+
+/* Modern glassmorphism effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Gradient backgrounds */
+.gradient-bg-primary {
+  background: linear-gradient(135deg, #f9e3e3 0%, #fceee8 50%, #f9e3e3 100%);
+}
+
+.gradient-bg-accent {
+  background: linear-gradient(135deg, #b44f21 0%, #d66535 100%);
+}
+
+/* Modern shadows */
+.shadow-elegant {
+  box-shadow: 0 10px 30px rgba(180, 79, 33, 0.1);
+}
+
+.shadow-soft {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-hover {
+  transition: all 0.3s ease;
+}
+
+.shadow-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(180, 79, 33, 0.2);
+}
+
+/* Smooth transitions */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animated gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #b44f21, #d66535, #b44f21);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 3s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Fade in animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Decorative shapes */
+.decorative-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* Modern card styles */
+.modern-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.modern-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(180, 79, 33, 0.15);
+}
+
+/* Auth background */
 .auth {
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(17px);
 }
 
-/* Custom styles for toast container */
+/* Custom toast container */
 .custom-toast-container {
   white-space: nowrap;
-  /* Prevent text from wrapping */
-
   font-size: 20px;
-  /* Set background color to white */
   color: black;
-  /* Set text color to black */
 }
